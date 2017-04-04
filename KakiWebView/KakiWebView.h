@@ -14,6 +14,6 @@ FOUNDATION_EXPORT double KakiWebViewVersionNumber;
 //! Project version string for KakiWebView.
 FOUNDATION_EXPORT const unsigned char KakiWebViewVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <KakiWebView/PublicHeader.h>
 
-
+#import <KakiWebView/UIWebView+Kaki.h>
+#import <KakiWebView/KakiWebViewPlugin.h>

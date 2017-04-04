@@ -7,10 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C15460541E9362DB00641418 /* UIWebView+Kaki.h in Headers */ = {isa = PBXBuildFile; fileRef = C15460521E9362DB00641418 /* UIWebView+Kaki.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C15460551E9362DB00641418 /* UIWebView+Kaki.m in Sources */ = {isa = PBXBuildFile; fileRef = C15460531E9362DB00641418 /* UIWebView+Kaki.m */; };
+		C15460571E93645600641418 /* KakiWebViewPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C15460561E93645600641418 /* KakiWebViewPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C154605A1E9368BF00641418 /* KakiWebViewPatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = C15460581E9368BF00641418 /* KakiWebViewPatcher.h */; };
+		C154605B1E9368BF00641418 /* KakiWebViewPatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C15460591E9368BF00641418 /* KakiWebViewPatcher.m */; };
+		C154605E1E93690B00641418 /* KakiWebViewPluginContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = C154605C1E93690B00641418 /* KakiWebViewPluginContainer.h */; };
+		C154605F1E93690B00641418 /* KakiWebViewPluginContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = C154605D1E93690B00641418 /* KakiWebViewPluginContainer.m */; };
 		C16EC2921E88DA8200B96B38 /* KakiWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = C16EC2901E88DA8200B96B38 /* KakiWebView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C15460521E9362DB00641418 /* UIWebView+Kaki.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Kaki.h"; sourceTree = "<group>"; };
+		C15460531E9362DB00641418 /* UIWebView+Kaki.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Kaki.m"; sourceTree = "<group>"; };
+		C15460561E93645600641418 /* KakiWebViewPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KakiWebViewPlugin.h; sourceTree = "<group>"; };
+		C15460581E9368BF00641418 /* KakiWebViewPatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KakiWebViewPatcher.h; sourceTree = "<group>"; };
+		C15460591E9368BF00641418 /* KakiWebViewPatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KakiWebViewPatcher.m; sourceTree = "<group>"; };
+		C154605C1E93690B00641418 /* KakiWebViewPluginContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KakiWebViewPluginContainer.h; sourceTree = "<group>"; };
+		C154605D1E93690B00641418 /* KakiWebViewPluginContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KakiWebViewPluginContainer.m; sourceTree = "<group>"; };
 		C16EC28D1E88DA8200B96B38 /* KakiWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KakiWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C16EC2901E88DA8200B96B38 /* KakiWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KakiWebView.h; sourceTree = "<group>"; };
 		C16EC2911E88DA8200B96B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,6 +41,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C154604F1E93629F00641418 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C15460511E93629F00641418 /* Utils */,
+				C15460501E93629F00641418 /* Plugins */,
+				C15460521E9362DB00641418 /* UIWebView+Kaki.h */,
+				C15460531E9362DB00641418 /* UIWebView+Kaki.m */,
+				C15460561E93645600641418 /* KakiWebViewPlugin.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C15460501E93629F00641418 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		C15460511E93629F00641418 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C15460581E9368BF00641418 /* KakiWebViewPatcher.h */,
+				C15460591E9368BF00641418 /* KakiWebViewPatcher.m */,
+				C154605C1E93690B00641418 /* KakiWebViewPluginContainer.h */,
+				C154605D1E93690B00641418 /* KakiWebViewPluginContainer.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		C16EC2831E88DA8200B96B38 = {
 			isa = PBXGroup;
 			children = (
@@ -46,6 +90,7 @@
 		C16EC28F1E88DA8200B96B38 /* KakiWebView */ = {
 			isa = PBXGroup;
 			children = (
+				C154604F1E93629F00641418 /* Classes */,
 				C16EC2901E88DA8200B96B38 /* KakiWebView.h */,
 				C16EC2911E88DA8200B96B38 /* Info.plist */,
 			);
@@ -59,6 +104,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C154605E1E93690B00641418 /* KakiWebViewPluginContainer.h in Headers */,
+				C15460571E93645600641418 /* KakiWebViewPlugin.h in Headers */,
+				C15460541E9362DB00641418 /* UIWebView+Kaki.h in Headers */,
+				C154605A1E9368BF00641418 /* KakiWebViewPatcher.h in Headers */,
 				C16EC2921E88DA8200B96B38 /* KakiWebView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +181,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C15460551E9362DB00641418 /* UIWebView+Kaki.m in Sources */,
+				C154605B1E9368BF00641418 /* KakiWebViewPatcher.m in Sources */,
+				C154605F1E93690B00641418 /* KakiWebViewPluginContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +341,7 @@
 				C16EC2971E88DA8200B96B38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
