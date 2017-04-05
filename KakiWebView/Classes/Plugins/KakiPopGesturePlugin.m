@@ -107,15 +107,19 @@ typedef NS_ENUM(NSInteger, KakiSnapshotViewType) {
 }
 
 - (void)__createSnapshotView {
-    if (_snapshotView != nil) return;
+    if (_snapshotView != nil) {
+        [_snapshotView removeFromSuperview];
+        _snapshotView = nil;
+    }
 
     __strong UIWebView *strongWebView = self.webView;
     if (strongWebView == nil) return;
 
     CGRect rect = strongWebView.frame;
     _snapshotView = [[UIView alloc] initWithFrame:rect];
+    CGRect bounds = _snapshotView.bounds;
 
-    UIImageView *leftView = [[UIImageView alloc] initWithFrame:CGRectOffset(rect, -44, 0)];
+    UIImageView *leftView = [[UIImageView alloc] initWithFrame:CGRectOffset(bounds, -44, 0)];
     leftView.contentMode = UIViewContentModeScaleAspectFit;
     if (self.historySnapshots.count > 0) {
         leftView.image = self.historySnapshots[self.historyCursor - 1][@"snapshot"];
@@ -123,7 +127,7 @@ typedef NS_ENUM(NSInteger, KakiSnapshotViewType) {
     leftView.tag = KakiSnapshotViewTypeShadow;
     [_snapshotView addSubview:leftView];
 
-    UIView *blackView = [[UIView alloc] initWithFrame:rect];
+    UIView *blackView = [[UIView alloc] initWithFrame:bounds];
     blackView.alpha = 0.8;
     blackView.backgroundColor = [UIColor blackColor];
     blackView.tag = KakiSnapshotViewTypeBlackAlpha;
@@ -138,12 +142,12 @@ typedef NS_ENUM(NSInteger, KakiSnapshotViewType) {
     if (strongWebView == nil) return;
 
     if (x >= 0) {
-        CGRect rect = self.webViewOriginalFrame;
-        CGRect left = CGRectOffset(rect, -44, 0);
+        CGRect bounds = self.snapshotView.bounds;
+        CGRect left = CGRectOffset(bounds, -44, 0);
         UIView *leftView = [self.snapshotView viewWithTag:KakiSnapshotViewTypeShadow];
-        leftView.frame = CGRectOffset(left, (x / rect.size.width) * 44, 0);
+        leftView.frame = CGRectOffset(left, (x / bounds.size.width) * 44, 0);
 
-        strongWebView.frame = CGRectOffset(rect, x, 0);
+        strongWebView.frame = CGRectOffset(self.webViewOriginalFrame, x, 0);
 
         UIView *blackView = [self.snapshotView viewWithTag:KakiSnapshotViewTypeBlackAlpha];
         blackView.alpha = 0.8 * (1 - x / leftView.frame.size.width);
@@ -241,6 +245,11 @@ typedef NS_ENUM(NSInteger, KakiSnapshotViewType) {
     _historyCursor = 0;
     _panGesture.delegate = nil;
     _panGesture = nil;
+
+    if (_snapshotView != nil) {
+        [_snapshotView removeFromSuperview];
+        _snapshotView = nil;
+    }
 }
 
 - (void)webViewDidMoveToSuperview:(UIWebView *)webView {
