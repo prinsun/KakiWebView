@@ -13,6 +13,8 @@
 		C11699E41E9526050028E657 /* KakiProgressPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C11699E21E9526050028E657 /* KakiProgressPlugin.m */; };
 		C11699E71E952B460028E657 /* KakiPopGesturePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C11699E51E952B460028E657 /* KakiPopGesturePlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C11699E81E952B460028E657 /* KakiPopGesturePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C11699E61E952B460028E657 /* KakiPopGesturePlugin.m */; };
+		C11699EB1E952E5B0028E657 /* KakiTitleObserverPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C11699E91E952E5B0028E657 /* KakiTitleObserverPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C11699EC1E952E5B0028E657 /* KakiTitleObserverPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C11699EA1E952E5B0028E657 /* KakiTitleObserverPlugin.m */; };
 		C15460541E9362DB00641418 /* UIWebView+Kaki.h in Headers */ = {isa = PBXBuildFile; fileRef = C15460521E9362DB00641418 /* UIWebView+Kaki.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C15460551E9362DB00641418 /* UIWebView+Kaki.m in Sources */ = {isa = PBXBuildFile; fileRef = C15460531E9362DB00641418 /* UIWebView+Kaki.m */; };
 		C15460571E93645600641418 /* KakiWebViewPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C15460561E93645600641418 /* KakiWebViewPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,6 +32,8 @@
 		C11699E21E9526050028E657 /* KakiProgressPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KakiProgressPlugin.m; sourceTree = "<group>"; };
 		C11699E51E952B460028E657 /* KakiPopGesturePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KakiPopGesturePlugin.h; sourceTree = "<group>"; };
 		C11699E61E952B460028E657 /* KakiPopGesturePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KakiPopGesturePlugin.m; sourceTree = "<group>"; };
+		C11699E91E952E5B0028E657 /* KakiTitleObserverPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KakiTitleObserverPlugin.h; sourceTree = "<group>"; };
+		C11699EA1E952E5B0028E657 /* KakiTitleObserverPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KakiTitleObserverPlugin.m; sourceTree = "<group>"; };
 		C15460521E9362DB00641418 /* UIWebView+Kaki.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Kaki.h"; sourceTree = "<group>"; };
 		C15460531E9362DB00641418 /* UIWebView+Kaki.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Kaki.m"; sourceTree = "<group>"; };
 		C15460561E93645600641418 /* KakiWebViewPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KakiWebViewPlugin.h; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 				C11699E21E9526050028E657 /* KakiProgressPlugin.m */,
 				C11699E51E952B460028E657 /* KakiPopGesturePlugin.h */,
 				C11699E61E952B460028E657 /* KakiPopGesturePlugin.m */,
+				C11699E91E952E5B0028E657 /* KakiTitleObserverPlugin.h */,
+				C11699EA1E952E5B0028E657 /* KakiTitleObserverPlugin.m */,
 			);
 			path = Plugins;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 				C15460571E93645600641418 /* KakiWebViewPlugin.h in Headers */,
 				C15460541E9362DB00641418 /* UIWebView+Kaki.h in Headers */,
 				C154605A1E9368BF00641418 /* KakiWebViewPatcher.h in Headers */,
+				C11699EB1E952E5B0028E657 /* KakiTitleObserverPlugin.h in Headers */,
 				C11699E31E9526050028E657 /* KakiProgressPlugin.h in Headers */,
 				C16EC2921E88DA8200B96B38 /* KakiWebView.h in Headers */,
 			);
@@ -203,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C11699E01E951F870028E657 /* KakiJavascriptCorePlugin.m in Sources */,
+				C11699EC1E952E5B0028E657 /* KakiTitleObserverPlugin.m in Sources */,
 				C11699E41E9526050028E657 /* KakiProgressPlugin.m in Sources */,
 				C15460551E9362DB00641418 /* UIWebView+Kaki.m in Sources */,
 				C154605B1E9368BF00641418 /* KakiWebViewPatcher.m in Sources */,
