@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C11699DF1E951F870028E657 /* KakiJavascriptCorePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C11699DD1E951F870028E657 /* KakiJavascriptCorePlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C11699E01E951F870028E657 /* KakiJavascriptCorePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C11699DE1E951F870028E657 /* KakiJavascriptCorePlugin.m */; };
+		C11699E31E9526050028E657 /* KakiProgressPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C11699E11E9526050028E657 /* KakiProgressPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C11699E41E9526050028E657 /* KakiProgressPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C11699E21E9526050028E657 /* KakiProgressPlugin.m */; };
 		C15460541E9362DB00641418 /* UIWebView+Kaki.h in Headers */ = {isa = PBXBuildFile; fileRef = C15460521E9362DB00641418 /* UIWebView+Kaki.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C15460551E9362DB00641418 /* UIWebView+Kaki.m in Sources */ = {isa = PBXBuildFile; fileRef = C15460531E9362DB00641418 /* UIWebView+Kaki.m */; };
 		C15460571E93645600641418 /* KakiWebViewPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C15460561E93645600641418 /* KakiWebViewPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		C11699DD1E951F870028E657 /* KakiJavascriptCorePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KakiJavascriptCorePlugin.h; sourceTree = "<group>"; };
 		C11699DE1E951F870028E657 /* KakiJavascriptCorePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KakiJavascriptCorePlugin.m; sourceTree = "<group>"; };
+		C11699E11E9526050028E657 /* KakiProgressPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KakiProgressPlugin.h; sourceTree = "<group>"; };
+		C11699E21E9526050028E657 /* KakiProgressPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KakiProgressPlugin.m; sourceTree = "<group>"; };
 		C15460521E9362DB00641418 /* UIWebView+Kaki.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Kaki.h"; sourceTree = "<group>"; };
 		C15460531E9362DB00641418 /* UIWebView+Kaki.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Kaki.m"; sourceTree = "<group>"; };
 		C15460561E93645600641418 /* KakiWebViewPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KakiWebViewPlugin.h; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 			children = (
 				C11699DD1E951F870028E657 /* KakiJavascriptCorePlugin.h */,
 				C11699DE1E951F870028E657 /* KakiJavascriptCorePlugin.m */,
+				C11699E11E9526050028E657 /* KakiProgressPlugin.h */,
+				C11699E21E9526050028E657 /* KakiProgressPlugin.m */,
 			);
 			path = Plugins;
 			sourceTree = "<group>";
@@ -115,6 +121,7 @@
 				C15460571E93645600641418 /* KakiWebViewPlugin.h in Headers */,
 				C15460541E9362DB00641418 /* UIWebView+Kaki.h in Headers */,
 				C154605A1E9368BF00641418 /* KakiWebViewPatcher.h in Headers */,
+				C11699E31E9526050028E657 /* KakiProgressPlugin.h in Headers */,
 				C16EC2921E88DA8200B96B38 /* KakiWebView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C11699E01E951F870028E657 /* KakiJavascriptCorePlugin.m in Sources */,
+				C11699E41E9526050028E657 /* KakiProgressPlugin.m in Sources */,
 				C15460551E9362DB00641418 /* UIWebView+Kaki.m in Sources */,
 				C154605B1E9368BF00641418 /* KakiWebViewPatcher.m in Sources */,
 				C154605F1E93690B00641418 /* KakiWebViewPluginContainer.m in Sources */,

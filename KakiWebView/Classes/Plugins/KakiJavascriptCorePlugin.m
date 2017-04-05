@@ -49,18 +49,22 @@ static NSString *const KakiJSContextDidCreateNotification = @"com.makee.kaki.not
     NSAssert(object != nil, @"object cannot be nil!");
     NSAssert(name != nil, @"name cannot be nil!");
 
-    unsigned protocolCount = 0;
-    Protocol * __unsafe_unretained * inheritProtocols = protocol_copyProtocolList(protocol, &protocolCount);
+#if DEBUG
+    {
+        unsigned protocolCount = 0;
+        Protocol * __unsafe_unretained * inheritProtocols = protocol_copyProtocolList(protocol, &protocolCount);
 
-    BOOL findJSExport = NO;
-    for (unsigned i = 0; i < protocolCount; i++) {
-        findJSExport = protocol_isEqual(inheritProtocols[i], @protocol(JSExport));
-        if (findJSExport) break;
+        BOOL findJSExport = NO;
+        for (unsigned i = 0; i < protocolCount; i++) {
+            findJSExport = protocol_isEqual(inheritProtocols[i], @protocol(JSExport));
+            if (findJSExport) break;
+        }
+
+        if (inheritProtocols != NULL) free(inheritProtocols);
+
+        NSAssert(findJSExport == YES, @"protocol must inherit of JSExport");
     }
-
-    if (inheritProtocols != NULL) free(inheritProtocols);
-
-    NSAssert(findJSExport == YES, @"protocol must inherit of JSExport");
+#endif
 
     if (![object conformsToProtocol:protocol]) {
         class_addProtocol(object.class, protocol);
@@ -134,6 +138,7 @@ static NSString *const KakiJSContextDidCreateNotification = @"com.makee.kaki.not
 }
 
 @end
+
 
 @implementation NSObject (JSContextCreation)
 
