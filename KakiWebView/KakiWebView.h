@@ -19,3 +19,4 @@ FOUNDATION_EXPORT const unsigned char KakiWebViewVersionString[];
 #import <KakiWebView/KakiWebViewPlugin.h>
 #import <KakiWebView/KakiJavascriptCorePlugin.h>
 #import <KakiWebView/KakiProgressPlugin.h>
+#import <KakiWebView/KakiPopGesturePlugin.h>

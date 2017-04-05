@@ -11,6 +11,8 @@
 		C11699E01E951F870028E657 /* KakiJavascriptCorePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C11699DE1E951F870028E657 /* KakiJavascriptCorePlugin.m */; };
 		C11699E31E9526050028E657 /* KakiProgressPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C11699E11E9526050028E657 /* KakiProgressPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C11699E41E9526050028E657 /* KakiProgressPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C11699E21E9526050028E657 /* KakiProgressPlugin.m */; };
+		C11699E71E952B460028E657 /* KakiPopGesturePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C11699E51E952B460028E657 /* KakiPopGesturePlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C11699E81E952B460028E657 /* KakiPopGesturePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = C11699E61E952B460028E657 /* KakiPopGesturePlugin.m */; };
 		C15460541E9362DB00641418 /* UIWebView+Kaki.h in Headers */ = {isa = PBXBuildFile; fileRef = C15460521E9362DB00641418 /* UIWebView+Kaki.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C15460551E9362DB00641418 /* UIWebView+Kaki.m in Sources */ = {isa = PBXBuildFile; fileRef = C15460531E9362DB00641418 /* UIWebView+Kaki.m */; };
 		C15460571E93645600641418 /* KakiWebViewPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C15460561E93645600641418 /* KakiWebViewPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +28,8 @@
 		C11699DE1E951F870028E657 /* KakiJavascriptCorePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KakiJavascriptCorePlugin.m; sourceTree = "<group>"; };
 		C11699E11E9526050028E657 /* KakiProgressPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KakiProgressPlugin.h; sourceTree = "<group>"; };
 		C11699E21E9526050028E657 /* KakiProgressPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KakiProgressPlugin.m; sourceTree = "<group>"; };
+		C11699E51E952B460028E657 /* KakiPopGesturePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KakiPopGesturePlugin.h; sourceTree = "<group>"; };
+		C11699E61E952B460028E657 /* KakiPopGesturePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KakiPopGesturePlugin.m; sourceTree = "<group>"; };
 		C15460521E9362DB00641418 /* UIWebView+Kaki.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Kaki.h"; sourceTree = "<group>"; };
 		C15460531E9362DB00641418 /* UIWebView+Kaki.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Kaki.m"; sourceTree = "<group>"; };
 		C15460561E93645600641418 /* KakiWebViewPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KakiWebViewPlugin.h; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 				C11699DE1E951F870028E657 /* KakiJavascriptCorePlugin.m */,
 				C11699E11E9526050028E657 /* KakiProgressPlugin.h */,
 				C11699E21E9526050028E657 /* KakiProgressPlugin.m */,
+				C11699E51E952B460028E657 /* KakiPopGesturePlugin.h */,
+				C11699E61E952B460028E657 /* KakiPopGesturePlugin.m */,
 			);
 			path = Plugins;
 			sourceTree = "<group>";
@@ -117,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C154605E1E93690B00641418 /* KakiWebViewPluginContainer.h in Headers */,
+				C11699E71E952B460028E657 /* KakiPopGesturePlugin.h in Headers */,
 				C11699DF1E951F870028E657 /* KakiJavascriptCorePlugin.h in Headers */,
 				C15460571E93645600641418 /* KakiWebViewPlugin.h in Headers */,
 				C15460541E9362DB00641418 /* UIWebView+Kaki.h in Headers */,
@@ -199,6 +206,7 @@
 				C11699E41E9526050028E657 /* KakiProgressPlugin.m in Sources */,
 				C15460551E9362DB00641418 /* UIWebView+Kaki.m in Sources */,
 				C154605B1E9368BF00641418 /* KakiWebViewPatcher.m in Sources */,
+				C11699E81E952B460028E657 /* KakiPopGesturePlugin.m in Sources */,
 				C154605F1E93690B00641418 /* KakiWebViewPluginContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
