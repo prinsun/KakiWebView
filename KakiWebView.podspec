@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.author       = { "makee" => "wengyang56@163.com" }
   s.source       = { :git => "git@github.com:prinsun/KakiWebView.git", :tag => "#{s.version}" }
 
+  s.platform     = :ios, "7.0"
   s.source_files  = "KakiWebView/Classes/**/*.{h,m,mm,c,cpp}"
 
   s.frameworks = "UIKit", "JavaScriptCore"
