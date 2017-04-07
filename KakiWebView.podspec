@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "KakiWebView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Simple && Scalable UIWebview Framework"
 
   s.homepage     = "http://blog.makeex.com/2017/04/06/thinking-in-fe-how-to-enhance-the-uiwebview/"
